@@ -11,7 +11,7 @@ const getWorkouts = async (req, res) => {
 const getWorkout = async (req, res) => {
   const { id } = req.params;
 
-  if (!mongoose.Types.ObjectId.isValid(id)) {
+  if (!mongoose.Types.ObkiajectId.isValid(id)) {
     return res.status(404).json({ error: "No such workout" });
   }
 
